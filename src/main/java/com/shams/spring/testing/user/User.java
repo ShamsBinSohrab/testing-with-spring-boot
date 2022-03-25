@@ -1,11 +1,21 @@
 package com.shams.spring.testing.user;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.With;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Data
+@Getter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "users")
 public class User {
 
@@ -13,9 +23,11 @@ public class User {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
+  @With
   @Column(name = "name", nullable = false)
   private String name;
 
+  @With
   @Column(name = "email", nullable = false)
   private String email;
 }
