@@ -1,4 +1,4 @@
-package com.shams.spring.testing.testingwithspringboot;
+package com.shams.spring.testing;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
