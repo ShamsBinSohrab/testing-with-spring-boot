@@ -23,6 +23,7 @@ import static org.mockito.Mockito.when;
 class UserServiceTest {
 
   private final User user = new User();
+
   @InjectMocks private UserService userService;
   @Mock private UserRepository userRepository;
 
